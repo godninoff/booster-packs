@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/Item/Item.ts"],
+  "sourcesContent": ["import {IItemSettings} from \"../type\";\n\nexport class Item implements IItemSettings {\n    name: string;\n    id: number;\n    rarity: string;\n    itemType: string;\n    constructor(settings: IItemSettings) {\n        this.name = settings.name;\n        this.id = settings.id;\n        this.rarity = settings.rarity;\n        this.itemType = settings.itemType;\n    }\n}\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAEO,MAAM,KAA8B;AAAA,EAKvC,YAAY,UAAyB;AACjC,SAAK,OAAO,SAAS;AACrB,SAAK,KAAK,SAAS;AACnB,SAAK,SAAS,SAAS;AACvB,SAAK,WAAW,SAAS;AAAA,EAC7B;AACJ;",
+  "names": []
+}

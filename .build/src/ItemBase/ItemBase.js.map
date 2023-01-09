@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/ItemBase/ItemBase.ts"],
+  "sourcesContent": ["import {ItemsBase} from \"../type\";\nimport {namesArr, randId, rarityArr, typesArr} from \"../helpers\";\nimport {Item} from \"../Item/Item\";\n\nconst getItemBase = (): ItemsBase  => {\n    let itemsBaseId = 1;\n    let itemsBase: ItemsBase = {};\n\n    typesArr.forEach((itemType) => {\n        rarityArr.forEach((rarity) => {\n            namesArr.forEach((name) => {\n                const id = randId();\n                itemsBase[itemsBaseId] = new Item({\n                    name: `${name.toLowerCase()} ${itemType.toLowerCase()}`,\n                    id,\n                    rarity,\n                    itemType,\n                });\n                itemsBaseId++\n            });\n        });\n    });\n\n    return itemsBase;\n};\n\nexport const itemsBase: ItemsBase = getItemBase();\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,qBAAoD;AACpD,kBAAmB;AAEnB,MAAM,cAAc,MAAkB;AAClC,MAAI,cAAc;AAClB,MAAIA,aAAuB,CAAC;AAE5B,0BAAS,QAAQ,CAAC,aAAa;AAC3B,6BAAU,QAAQ,CAAC,WAAW;AAC1B,8BAAS,QAAQ,CAAC,SAAS;AACvB,cAAM,SAAK,uBAAO;AAClB,QAAAA,WAAU,eAAe,IAAI,iBAAK;AAAA,UAC9B,MAAM,GAAG,KAAK,YAAY,KAAK,SAAS,YAAY;AAAA,UACpD;AAAA,UACA;AAAA,UACA;AAAA,QACJ,CAAC;AACD;AAAA,MACJ,CAAC;AAAA,IACL,CAAC;AAAA,EACL,CAAC;AAED,SAAOA;AACX;AAEO,MAAM,YAAuB,YAAY;",
+  "names": ["itemsBase"]
+}

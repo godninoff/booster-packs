@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/boosters/index.ts"],
+  "sourcesContent": ["import {Booster} from \"./base/BoosterBase\";\nimport {LuckyBooster} from \"./lucky/LuckyBooster\";\nimport {UniformBooster} from \"./uniform/UniformBooster\";\n\nexport {\n    Booster,\n    LuckyBooster,\n    UniformBooster\n}\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,yBAAsB;AACtB,0BAA2B;AAC3B,4BAA6B;",
+  "names": []
+}
